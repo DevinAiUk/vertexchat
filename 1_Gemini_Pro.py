@@ -8,10 +8,10 @@ from utils import SAFETY_SETTTINGS
 
 
 st.set_page_config(
-    page_title="Chat To XYthing",
+    page_title="Gemini-Pro Chat",
     page_icon="🔥",
     menu_items={
-        'About': "# Make By hiliuxg"
+        'About': "# Vertex AI"
     }
 )
 
