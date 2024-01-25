@@ -12,3 +12,6 @@ streamlit run 1_Gemini_Pro.py
 Get your API KEY from https://makersuite.google.com
 
 
+Credits:
+
+Repository was forked from: https://github.com/hiliuxg/geminichat
