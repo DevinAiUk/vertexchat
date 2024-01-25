@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 st.title("Gemini-Pro Chat")
-st.caption("a Chatbot, powered by Google Gemini Pro.")
+st.caption("Chatbot, powered by Google Gemini Pro.")
 
 
 if "app_key" not in st.session_state:
