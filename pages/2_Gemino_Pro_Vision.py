@@ -9,11 +9,11 @@ st.set_page_config(
     page_title="Chat with Gemini-Pro Vision",
     page_icon="🔥",
     menu_items={
-        'About': "Vertex AI"
+        'About': "Forked from https://github.com/hiliuxg/geminichat"
     }
 )
 
-st.title('Upload Image And Ask')
+st.title('Upload Image')
 
 if "app_key" not in st.session_state:
     app_key = st.text_input("Your Gemini App Key", type='password')
@@ -24,7 +24,7 @@ try:
     genai.configure(api_key = st.session_state.app_key)
     model = genai.GenerativeModel('gemini-pro-vision')
 except AttributeError as e:
-    st.warning("Please Put Your Gemini App Key First.")
+    st.warning("Please Add Your Gemini App Key.")
 
 
 def show_message(prompt, image, loading_str):
