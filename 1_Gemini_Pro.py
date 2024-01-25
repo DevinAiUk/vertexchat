@@ -11,7 +11,7 @@ st.set_page_config(
     page_title="Gemini-Pro Chat",
     page_icon="🔥",
     menu_items={
-        'About': "# Vertex AI"
+        'About': "# Forked from https://github.com/hiliuxg/geminichat"
     }
 )
 
