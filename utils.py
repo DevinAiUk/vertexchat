@@ -1,29 +1,30 @@
 
+
 """https://ai.google.dev/api/rest/v1beta/HarmCategory"""
 
-SAFETY_SETTINGS = [
+SAFETY_SETTTINGS = [
     {
         "category": "HARM_CATEGORY_SEXUAL",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
     {
         "category": "HARM_CATEGORY_DANGEROUS",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
     {
         "category": "HARM_CATEGORY_HARASSMENT",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
     {
         "category": "HARM_CATEGORY_HATE_SPEECH",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
     {
         "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
     {
         "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-        "threshold": "ALLOW",
+        "threshold": "BLOCK_ONLY_HIGH",
     },
 ]
