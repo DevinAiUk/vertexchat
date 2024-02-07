@@ -1,3 +1,6 @@
+
+"""https://ai.google.dev/api/rest/v1beta/HarmCategory"""
+
 SAFETY_SETTINGS = [
     {
         "category": "HARM_CATEGORY_SEXUAL",
