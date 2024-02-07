@@ -1,8 +1,10 @@
+
+
 import google.generativeai as genai
-from google.generativeai import SafetySettings 
 import streamlit as st
 import time
 import random
+from utils import SAFETY_SETTINGS
 
 
 st.set_page_config(
@@ -54,8 +56,7 @@ if "app_key" in st.session_state:
             message_placeholder.markdown("Thinking...")
             try:
                 full_response = ""
-                safety_settings = SafetySettings(max_tokens=2048)
-                for chunk in chat.send_message(prompt, stream=True, safety_settings=safety_settings):
+                for chunk in chat.send_message(prompt, stream=True, safety_settings = SAFETY_SETTINGS):
                     word_count = 0
                     random_int = random.randint(5, 10)
                     for word in chunk.text:
@@ -67,11 +68,8 @@ if "app_key" in st.session_state:
                             word_count = 0
                             random_int = random.randint(5, 10)
                 message_placeholder.markdown(full_response)
-                
             except genai.types.generation_types.BlockedPromptException as e:
-                st.error("Sorry, I cannot generate unsafe content")
-                
+                st.exception(e)
             except Exception as e:
                 st.exception(e)
-                
             st.session_state.history = chat.history
