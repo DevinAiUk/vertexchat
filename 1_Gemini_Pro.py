@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from google.generativeai import SafetySettings 
+from utils import SAFETY_SETTTINGS
 import streamlit as st
 import time
 import random
