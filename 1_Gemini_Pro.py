@@ -69,7 +69,7 @@ if "app_key" in st.session_state:
                 message_placeholder.markdown(full_response)
                 
             except genai.types.generation_types.BlockedPromptException as e:
-                st.error("Sorry, I cannot generate unsafe content")
+                st.error("Really? - Find another trick")
                 
             except Exception as e:
                 st.exception(e)
