@@ -7,7 +7,7 @@ https://geminix.streamlit.app/
 ## Running Locally
 ```python
 pip install -r requirements.txt
-streamlit run 1_Gemini_Pro.py
+streamlit run app.py
 ```
 Get your API KEY from https://makersuite.google.com
 
