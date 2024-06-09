@@ -15,3 +15,5 @@ Get your API KEY from https://makersuite.google.com
 # Credits:
 
 The repository was forked from: https://github.com/hiliuxg/geminichat
+
+sdk_version: "{{1.29.0}}"
