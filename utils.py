@@ -1,5 +1,5 @@
 # Original code
-SAFETY_SETTINGS = [
+SAFETY_SETTTINGS = [
     {
         "category": "HARM_CATEGORY_SEXUAL",
         "threshold": "BLOCK_NONE",
@@ -27,7 +27,8 @@ SAFETY_SETTINGS = [
 ]
 
 # Modified code to allow uninterrupted chat session
-MODIFIED_SAFETY_SETTTINGS = SAFETY_SETTINGS.copy()
+MODIFIED_SAFETY_SETTTINGS = []
 
+# Set all thresholds to "ALLOW_ALL" to disable blocking
 for setting in MODIFIED_SAFETY_SETTTINGS:
-    setting["threshold"] = "BLOCK_NONE" # Choose the appropriate threshold
+    setting["threshold"] = "ALLOW_ALL"
