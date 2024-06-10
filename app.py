@@ -4,7 +4,7 @@ import time
 import random
 from utils import SAFETY_SETTINGS
 
-huggingface_token = os.getenv("HF_TOKEN")
+#huggingface_token = os.getenv("HF_TOKEN")
 
 st.set_page_config(
     page_title="Vertex Chat AI",
