@@ -2,7 +2,7 @@ import google.generativeai as genai
 import streamlit as st
 import time
 import random
-from utils import SAFETY_SETTINGS, MODIFIED_SAFETY_SETTINGS
+from utils import SAFETY_SETTINGS
 
 huggingface_token = os.getenv("HF_TOKEN")
 
